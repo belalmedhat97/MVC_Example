@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MVC" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xfh-U0-ZUw">
+                                <rect key="frame" x="103.5" y="443" width="207" height="30"/>
+                                <color key="backgroundColor" red="0.40226909519999998" green="0.51685190199999997" blue="0.3816415668" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Show">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="ButtShow:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Rnc-O7-vqJ"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="LpW-iL-85N">
+                                <rect key="frame" x="62" y="124" width="290" height="269"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="xfh-U0-ZUw" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.0334821" id="3AL-Fd-8jj"/>
+                            <constraint firstItem="LpW-iL-85N" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="80" id="9SW-xp-o1y"/>
+                            <constraint firstItem="xfh-U0-ZUw" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="OqJ-oP-gMj"/>
+                            <constraint firstItem="xfh-U0-ZUw" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.5" id="SlO-SB-8nQ"/>
+                            <constraint firstItem="LpW-iL-85N" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.3" id="ToO-48-h56"/>
+                            <constraint firstItem="xfh-U0-ZUw" firstAttribute="top" secondItem="LpW-iL-85N" secondAttribute="bottom" constant="50" id="W3f-Cw-X33"/>
+                            <constraint firstItem="LpW-iL-85N" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.7" id="jm3-gd-dzF"/>
+                            <constraint firstItem="LpW-iL-85N" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="rwC-kv-7nO"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="DogImage" destination="LpW-iL-85N" id="yuc-mh-c4H"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="133" y="139"/>
+        </scene>
+    </scenes>
+</document>
