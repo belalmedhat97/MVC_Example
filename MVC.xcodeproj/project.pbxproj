@@ -67,6 +67,7 @@
 		5700277023D35017008600BC /* MVC */ = {
 			isa = PBXGroup;
 			children = (
+				573FA5D324AB9B1100CC1A75 /* Network */,
 				575A013323FAE90E006F594D /* Model */,
 				571734F723F4013F00FB70FD /* View */,
 				571734F623F4012B00FB70FD /* Controller */,
@@ -95,10 +96,17 @@
 			path = View;
 			sourceTree = "<group>";
 		};
-		575A013323FAE90E006F594D /* Model */ = {
+		573FA5D324AB9B1100CC1A75 /* Network */ = {
 			isa = PBXGroup;
 			children = (
 				573B820023D7632A00BB2794 /* Api.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		575A013323FAE90E006F594D /* Model */ = {
+			isa = PBXGroup;
+			children = (
 				57C675A423D78EDC003FE3E6 /* Model.swift */,
 			);
 			path = Model;

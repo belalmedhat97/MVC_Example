@@ -10,11 +10,11 @@ import Foundation
 import Alamofire
 class APICALL {
     private let UrlLink = "https://dog.ceo/api/breeds/image/random"
-    static let shared = APICALL()
+    static let shared = APICALL() // singleton pattern
     private init (){}
     
     
-    var deg:GetData?
+    var deg:GetData? // varaible of type protocol GetData
     func Net(){
         Alamofire.request(UrlLink,method: .get ,parameters: nil).responseJSON {
             response in

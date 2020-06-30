@@ -7,18 +7,12 @@
 //
 
 import Foundation
+// protocol for getting data parsed from codable
 protocol GetData {
     func DataRet(LIST:APIData)
 }
+// codable for data parsing data 
 struct APIData:Codable{
     var message:String?
     var status:String?
-}
-class SaveALL {
-    var message:String?
-    var status:String?
-    init(message1:String,status1:String){
-        self.message = message1
-        self.status = status1
-    }
 }
