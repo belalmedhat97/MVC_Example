@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="Vom-At-wd0" customClass="MainView" customModule="MVC" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bK7-oA-5lu">
+                    <rect key="frame" x="20" y="354" width="280" height="40"/>
+                    <color key="backgroundColor" red="0.40226909519999998" green="0.51685190199999997" blue="0.3816415668" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="NbV-GW-2CE"/>
+                    </constraints>
+                    <state key="normal" title="Show">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="showButton:" destination="Vom-At-wd0" eventType="touchUpInside" id="nNy-Na-sVR"/>
+                    </connections>
+                </button>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="foo-cm-ZJi">
+                    <rect key="frame" x="20" y="20" width="280" height="284"/>
+                    <color key="backgroundColor" systemColor="systemGrayColor"/>
+                </imageView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="nZP-Y4-XtX"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="nZP-Y4-XtX" firstAttribute="trailing" secondItem="bK7-oA-5lu" secondAttribute="trailing" constant="20" id="5LQ-AU-dk0"/>
+                <constraint firstItem="nZP-Y4-XtX" firstAttribute="trailing" secondItem="foo-cm-ZJi" secondAttribute="trailing" constant="20" id="AOr-jK-RLA"/>
+                <constraint firstItem="foo-cm-ZJi" firstAttribute="top" secondItem="nZP-Y4-XtX" secondAttribute="top" constant="20" id="F8k-wj-cDc"/>
+                <constraint firstItem="bK7-oA-5lu" firstAttribute="top" secondItem="foo-cm-ZJi" secondAttribute="bottom" constant="50" id="ho0-Zd-sjO"/>
+                <constraint firstItem="foo-cm-ZJi" firstAttribute="leading" secondItem="nZP-Y4-XtX" secondAttribute="leading" constant="20" id="kkS-Ku-rTC"/>
+                <constraint firstItem="foo-cm-ZJi" firstAttribute="height" secondItem="Vom-At-wd0" secondAttribute="height" multiplier="0.5" id="pSX-Xm-OaP"/>
+                <constraint firstItem="bK7-oA-5lu" firstAttribute="leading" secondItem="nZP-Y4-XtX" secondAttribute="leading" constant="20" id="tjQ-9B-xOm"/>
+            </constraints>
+            <connections>
+                <outlet property="dogImg" destination="foo-cm-ZJi" id="zrg-6v-pRn"/>
+            </connections>
+            <point key="canvasLocation" x="-1696" y="-263"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGrayColor">
+            <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

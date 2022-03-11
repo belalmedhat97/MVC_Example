@@ -7,10 +7,6 @@
 //
 
 import Foundation
-// protocol for getting data parsed from codable
-protocol GetData {
-    func DataRet(LIST:APIData)
-}
 // codable for data parsing data 
 struct APIData:Codable{
     var message:String?

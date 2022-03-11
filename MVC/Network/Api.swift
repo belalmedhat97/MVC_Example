@@ -14,13 +14,12 @@ class APICALL {
     private init (){}
     
     
-    var deg:GetData? // varaible of type protocol GetData
-    func Net(){
+    func Net(compeltion:@escaping(_ data:APIData)->()){
         Alamofire.request(UrlLink,method: .get ,parameters: nil).responseJSON {
             response in
             do {
                 let pars = try JSONDecoder().decode(APIData.self,from:response.data!)
-                self.deg?.DataRet(LIST: pars)
+                compeltion(pars)
                 print(pars.message!)
             }
             catch{
